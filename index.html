@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
+    <script type="application/javascript" language="JavaScript" src="scripts/lib/angular.js"></script>
     <title>Rootbeer does not taste like rootbeer!</title>
 </head>
 <body>
-    Does rootbeer taste like beer?
+    <h1>Does rootbeer taste like beer?</h1>
+    <div ng-controller="PeopleController">
+        <ul>
+            <li ng-repeat="person in people">{{person.name}}</li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/People/index.js"></script>
+    <script type="text/javascript" src="scripts/People/PeopleServices.js"></script>
+    <script type="text/javascript" src="scripts/People/PeopleController.js"></script>
 </body>
 </html>
