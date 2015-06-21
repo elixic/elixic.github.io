@@ -6,14 +6,25 @@
 </head>
 <body>
     <h1>Does rootbeer taste like beer?</h1>
+People
     <div ng-controller="PeopleController">
         <ul>
             <li ng-repeat="person in people">{{person.name}}</li>
         </ul>
     </div>
+Notes
+    <div ng-controller="NotesController">
+        <ul>
+            <li ng-repeat="note in notes">{{note.text}}</li>
+        </ul>
+    </div>
+
     <script type="text/javascript" src="scripts/app.js"></script>
     <script type="text/javascript" src="scripts/People/index.js"></script>
     <script type="text/javascript" src="scripts/People/PeopleServices.js"></script>
     <script type="text/javascript" src="scripts/People/PeopleController.js"></script>
+    <script type="text/javascript" src="scripts/Notes/index.js"></script>
+    <script type="text/javascript" src="scripts/Notes/NotesServices.js"></script>
+    <script type="text/javascript" src="scripts/Notes/NotesController.js"></script>
 </body>
 </html>
