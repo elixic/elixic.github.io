@@ -1,7 +1,7 @@
 define([
   'angular',
   'angular-route',
-  './Emailform/index'
+  './Emailform/module'
 ],
 function (ng, ngRoute) {
   'use strict';
