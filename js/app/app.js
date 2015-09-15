@@ -9,7 +9,7 @@ function (ng, ngRoute) {
 
   app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/', {
-      templateUrl: 'template/MailChimpTemplate.html',
+      templateUrl: 'templates/MailChimpTemplate.html',
       controller: 'EmailFormController'
     });
   }]);
