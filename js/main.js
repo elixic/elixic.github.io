@@ -1,13 +1,9 @@
 require.config({
-    paths: {
-        "angular": "./lib/angular.min",
-        "angular-route": "./lib/angular-route.min"
-    },
     shim: {
-        "angular": {
+        "angular.ming": {
             exports: "angular"
         },
-        "angular-route": {
+        "angular-route.min": {
             exports: "angular-route"
         }
     },
