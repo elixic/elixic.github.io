@@ -1,6 +1,7 @@
 define([
   'require',
   'angular',
+  'angular-route'
   './app'
 ],
 function(require, ng) {
