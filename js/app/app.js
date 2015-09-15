@@ -3,7 +3,7 @@ define([
   'angular-route',
   './Emailform/module'
 ],
-function (ng, ngRoute) {
+function (ng) {
   'use strict';
   var app = ng.module('pub', ['ngRoute', 'pub.EmailForm']);
 
