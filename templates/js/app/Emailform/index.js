@@ -1,6 +1,0 @@
-define([
-    './EmailFormController',
-    './EmailFormService'
-],
-function() {});
-
