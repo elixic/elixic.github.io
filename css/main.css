@@ -7,20 +7,20 @@ body {
 a:link {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: grey;
 }
 
 a:visited {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: grey;
 }
 
 .blurb {
     width: 95%;
     font-family: san-serif;
     font-size: 13pt;
-    color: black;
+    color: grey;
 }
 
 .center {
