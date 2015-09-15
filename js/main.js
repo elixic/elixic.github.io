@@ -1,11 +1,11 @@
 require.config({
-    shim: {
-        "angular.min": {
-            exports: "angular"
-        },
-        "angular-route.min": {
-            exports: "angular-route"
-        }
+  shim: {
+    "lib/angular.min": {
+      exports: "angular"
     },
-    deps: ["./app/bootstrap"]
+    "lib/angular-route.min": {
+      exports: "angular-route"
+    }
+  },
+  deps: ["./app/bootstrap"]
 });
