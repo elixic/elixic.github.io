@@ -12,5 +12,4 @@ require.config({
         }
     },
     deps: ["./app/bootstrap"]
-
 });
