@@ -1,6 +1,6 @@
 require.config({
     shim: {
-        "angular.ming": {
+        "angular.min": {
             exports: "angular"
         },
         "angular-route.min": {
