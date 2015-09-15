@@ -1,0 +1,20 @@
+doctype html
+
+head
+    link(rel='stylesheet', href='css/bootstrap.min.css', type='text/css')
+    link(rel='stylesheet', href='css/main.css', type='text/css')
+    link(rel='icon', href='img/beer-glass.ico')
+    title Ashley's Pub : Boardom's End
+    script(data-main='js/main.js', src='js/lib/require-2.1.18.js')
+body()
+    div(class='center pageHeader')
+        div(class='header-links')
+            span
+                a(href='http://ashleys.pub') Home
+        div(class='social-icons')
+            a(class='fb-icon', href='https://www.facebook.com/ashleyspubkitsap', target='_blank')
+            a(class='twitter-icon', href='https://twitter.com/ashleyspub', targe='_blank')
+    div(class='center pageContent')
+        div(class='ng-view')
+    div(class='center pageFooter')
+        span Copyright $copy; 2015 Ashley's Pub

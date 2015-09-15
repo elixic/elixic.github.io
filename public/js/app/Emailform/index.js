@@ -1,0 +1,6 @@
+define([
+    './EmailFormController',
+    './EmailFormService'
+],
+function() {});
+
