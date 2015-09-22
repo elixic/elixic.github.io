@@ -1,28 +1,92 @@
 <html>
   <head>
-    <link rel='stylesheet', href='css/bootstrap.min.css', type='text/css' />
-    <link rel='stylesheet', href='css/main.css', type='text/css' />
-    <link rel='icon', href='img/beer-glass.ico' />
-    <title>Ashley's Pub : Boardom's End</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/main.css"></link>
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="js/vendor/jquery.fullPage.min.js"></script>
   </head>
   <body>
     <div class='center pageHeader'>
-      <div class='header-links'>
-        <span>
-          <a href='http://ashleys.pub'>Home</a>
-        </span>
-      </div>
+      <ul id="menu" class="menu header-links">
+        <li data-menuanchor="Home"><a href="http://ashleys.pub">Home</a></li>
+        <li data-menuanchor="About"><a href="#About">About</a></li>
+        <li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
+      </ul>
       <div class='social-icons'>
         <a class='fb-icon', href='https://www.facebook.com/ashleyspubkitsap', target='_blank'></a>
         <a class='twitter-icon', href='https://twitter.com/ashleyspub', targe='_blank'></a>
       </div>
     </div>
-    <div class='center pageContent'>
-      <div class='ng-view'></div>
+    <div id="fullpage">
+      <div class="section" data-anchor="Home" id="sectionHome">
+        <div class="content center blurb">
+          <span>
+            We are going to open a pub for gamers. We will serve localaly brewed beers and ciders. We will provide an ever growing and changing library of games to play. We will partner with other local busiensses to provide food and other snacks.
+          </span>
+          <div class="center">
+            <img src="img/ap_bm.png" alt="Ashley's Pub : Boardoms End" style="height: 60%;" />
+          </div>
+          <div class="center content">
+            <span>&nbsp;</span>
+          </div>
+        </div>
+      </div>
+      <div class="section" data-anchor="About" id="sectionAbout">
+        <div id="aboutUs" class="content center blurb profiles">
+          <h2>
+            We are Ashley, and Isaac.
+          </h2>
+          <div>
+            <div class="profile">
+              <img src="img/am.png" alt="ashley" />
+              <span>
+                Ashely is the amazingly friendly and bubbly host, bartender, game instructor and manager. She loves to make people happy, teach people new things and of course to drink and play games.
+              </span>
+            </div>
+            <br>
+            <br>
+            <div class="profile">
+              <img src="img/if.png" alt="isaac" />
+              <span>
+                Isaac is a somewhat quiet and always introspective IT professional turning entreprenuer and bar tender who loves beer and games and hopes to share those things with all the world.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" data-anchor="Contact" id="sectionContact">
+        <div name='emailRequest' class="content center blurb">
+          <span class='contact blurb'>
+            We are so happy that you are here! It hopefully means you'd like to be addred to our mailing list! If you do, please put your email address in the form below and click submit and we'll start sending you emails!!
+          </span>
+          <br />
+          <div id='mc_embed_signup'>
+            <form action='//pub.us11.list-manage.com/subscribe/post?u=337fefae20f48cd756c93315b&amp;id=91b8267f42' method='post' id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' class='validate' target='_blank' novalidate>
+              <div id='mc_embed_signup_scroll'>
+                <div class='input-group'>
+                  <input type='email' value='' name='EMAIL' class='form-control' ng.model='email.address' id='mce-EMAIL' placeholder='email address' required></input>
+                  <span class='input-group-btn'>
+                    <input type='submit' value='Subscribe' name='subscribe' id='mc-embedded-subscribe' class='btn btn-default'></input>
+                  </span>
+                </div>
+                <div style='position: absolute; left: -5000px;'>
+                  <input type='text' name='b_337fefae20f48cd756c93315b_91b8267f42' tabindex='-1' value=''></input>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>      </div>
     </div>
-    <div class='center pageFooter'>
-      <span>Copyright $copy; 2015 Ashley's Pub</span>
-    </div>
-    <script data-main='js/main', src='js/lib/require-2.1.18.js'></script>
+
+    <script>
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          css3: true,
+          menu: '#menu',
+          navigation: true
+        });
+      });
+    </script>
   </body>
 </html>
