@@ -23,6 +23,11 @@ a:visited {
     color: grey;
 }
 
+.email {
+  width: 100%;
+  background-color: rgba(0,0,0,0.55);
+}
+
 .contact {
   color: lightgrey;
 }
@@ -48,20 +53,27 @@ a:visited {
   background-size: contain;
 }
 
+.logo img {
+  height: 450px;
+}
+
+/*
+ * Profiles
+ */
+
 .profiles {
   color: lightgrey;
 }
 
 .profile {
   color: lightgrey;
-  background-color: rgba(255, 0, 255, 0.5);
-  padding-bottom: 50px;
+  background-color: rgba(0, 0, 255, 0.5);
 }
 
 .profile img {
-  height: 90px;
   float: left;
-  padding-right: 10px;
+  height: 250px;
+  padding: 10px 10px 10px 10px;
 }
 
 .center {

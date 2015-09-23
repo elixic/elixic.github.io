@@ -25,8 +25,8 @@
           <span>
             We are going to open a pub for gamers. We will serve localaly brewed beers and ciders. We will provide an ever growing and changing library of games to play. We will partner with other local busiensses to provide food and other snacks.
           </span>
-          <div class="center">
-            <img src="img/ap_bm.png" alt="Ashley's Pub : Boardoms End" style="height: 60%;" />
+          <div class="center logo">
+            <img src="img/ap_bm.png" alt="Ashley's Pub : Boardoms End" />
           </div>
           <div class="center content">
             <span>&nbsp;</span>
@@ -39,28 +39,34 @@
             We are Ashley, and Isaac.
           </h2>
           <div>
-            <div class="profile">
-              <img src="img/am.png" alt="ashley" />
-              <span>
-                Ashley is the amazingly friendly and bubbly host, bartender, game instructor and manager. She loves to make people happy, teach people new things and of course to drink and play games.
-              </span>
+            <div class="slide" id="ashleySlide">
+              <div class="profile">
+                <img src="img/am.jpg" alt="ashley" />
+                <span>
+                  Ashley is the amazingly friendly and bubbly host, bartender, game instructor and manager. She loves to make people happy, teach people new things and of course to drink and play games.
+                </span>
+              </div>
             </div>
             <br>
             <br>
-            <div class="profile">
-              <img src="img/if.png" alt="isaac" />
-              <span>
-                Isaac is a somewhat quiet and always introspective IT professional turning entreprenuer and bar tender who loves beer and games and hopes to share those things with all the world.
-              </span>
+            <div class="slide" id="isaacSlide">
+              <div class="profile">
+                <img src="img/if.jpg" alt="isaac" />
+                <span>
+                  Isaac is a somewhat quiet and always introspective IT professional turning entreprenuer and bar tender who loves beer and games and hopes to share those things with all the world.
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="section" data-anchor="Contact" id="sectionContact">
         <div name='emailRequest' class="content center blurb">
-          <span class='contact blurb'>
-            We are so happy that you are here! It hopefully means you'd like to be addred to our mailing list! If you do, please put your email address in the form below and click submit and we'll start sending you emails!!
-          </span>
+          <div class="email">
+            <span class="contact blurb">
+              We are so happy that you are here! It hopefully means you'd like to be addred to our mailing list! If you do, please put your email address in the form below and click submit and we'll start sending you emails!!
+            </span>
+          </div>
           <br />
           <div id='mc_embed_signup'>
             <form action='//pub.us11.list-manage.com/subscribe/post?u=337fefae20f48cd756c93315b&amp;id=91b8267f42' method='post' id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' class='validate' target='_blank' novalidate>
@@ -83,9 +89,10 @@
     <script>
       $(document).ready(function() {
         $('#fullpage').fullpage({
+          verticalCentered: false,
           css3: true,
           menu: '#menu',
-          navigation: true
+          paddingTop: '55px'
         });
       });
     </script>
