@@ -65,6 +65,20 @@ a:visited {
   color: lightgrey;
 }
 
+.profiles h2 {
+  color: darkgrey;
+  width: 100%;
+  background-color: rgba(0, 0, 150, 0.5);
+}
+
+.profileName span {
+  color: darkgrey;
+}
+
+.profileName span.active {
+  color: grey;
+}
+
 .profile {
   color: lightgrey;
   background-color: rgba(0, 0, 255, 0.5);
